@@ -36,7 +36,7 @@ class HttpRequestResponse:
         except Exception as e:
             print('POST_JSON请求报错--', e)
 
-
+'''
 # get
 new_get = HttpRequestResponse()
 url = 'http://localhost:12306/book_info'
@@ -72,3 +72,4 @@ data = {
 }
 json_json=newJson.post_json(url,data,headers)
 print("json_json---",json_json)
+'''
