@@ -1,4 +1,17 @@
 # HttpRequestResponse
+
+* get(self, url, params=None, headers=None)  
+* post_form(self, url, data, headers=None)  
+* post_json(self, url, data, headers=None)  
+请求成功，返回响应结果的json解码json_r，和响应结果r  
+json_r用来内容判断  
+r用来响应码判断  
+例如  
+```python
+if r.status_code==200:
+            self.assertEqual('successed', json_r['reason'], "是状态吗")
+```  
+一个栗子
 ```python
 import sys
 sys.path.append('..')
@@ -15,6 +28,8 @@ class MyTest(unittest.TestCase):
             }
             get_json = new_get.get(url, params=params)
             print("get_json---", get_json)
-            self.assertEqual('successed',get_json['reason'],"是状态吗")
+            if r.status_code==200:
+                self.assertEqual('successed', get_json['reason'], "是状态吗")
 
 ```
+---
