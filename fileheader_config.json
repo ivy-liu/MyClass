@@ -1,4 +1,7 @@
-"fileheader.customMade": {    //此为头部注释
+{
+        //...
+        
+        "fileheader.customMade": {    //此为头部注释
         "Description": "",
         "Version": "",
         "Autor": "ivy-liu",
@@ -24,3 +27,4 @@
         "wideSame": false, // 设置为true开启
         "wideNum": 13 // 字段长度 默认为13
     }
+}
